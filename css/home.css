@@ -1,0 +1,201 @@
+body {
+    text-align: center;
+    color: black;
+}
+
+.header {
+    background: url(../materials/hoadao.jpg) center no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+    text-align: right;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.big-heading {
+    font-family: "Sedgwick Ave", cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+
+.title-image {
+    width: 280px;
+}
+
+.download-buttons {
+    margin: 5% 3% 5% 0%;
+    font-size: 1rem;
+}
+
+.goto-buttons {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goto2-buttons {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.goto3-buttons {
+    width: 50%;
+    padding: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.myColor {
+    color: black;
+    transition: 0.1s;
+}
+
+.myColor:hover {
+    color: #49c87c;
+    scale: 150%;
+}
+
+.myColor2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    transition: 0.1s;
+}
+
+.myColor2:hover {
+    color: #49c87c;
+    scale: 150%;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.feeling {
+    border-radius: 50px;
+    width: 80%;
+    background-color: #9A7C4F;
+}
+
+.icon {
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.icon:hover {
+    color: gray;
+    scale: 150%;
+}
+
+.icon1 {
+    margin-left: 20px;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+.icon1:hover {
+    color: gray;
+    scale: 150%;
+}
+
+.card-body {
+    position: relative;
+    background-color: #F7F7F7;
+    text-align: center;
+
+    img {
+        height: 120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#explore-p {
+    margin-top: 20px;
+    font-size: large;
+}
+
+#pricing {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1500px) {
+    #pricing {
+        position: relative;
+        background-color: white;
+        padding: 100px;
+    }
+}
+
+.explore-button {
+    width: 100%;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+.pricing-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.the-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.end {
+    margin-top: 50px;
+    width: 70%;
+    border-radius: 50px;
+    background-color: #9A7C4F;
+}
+
+@media (min-width: 1366px) {
+    .card-body {
+        position: relative;
+        background-color: #F7F7F7;
+        text-align: center;
+
+        img {
+            height: 170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

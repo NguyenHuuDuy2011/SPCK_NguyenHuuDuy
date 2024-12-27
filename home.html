@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ SPCK - Hữu Duy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div class="container-fluid header" id="store-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="">Chợ Tết Online</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                style="border: none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/store.html"><i class="fa-solid fa-basket-shopping"></i> Mua
+                            sắm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/cart.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/login.html"><i class="fa-solid fa-right-to-bracket"></i> Đăng
+                            nhập</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Công cụ khác
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="html/contact.html"><i class="fa-solid fa-headset"></i> Liên
+                                hệ với chúng tôi</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="html/download.html"><i class="fa-solid fa-download"></i> Tải
+                                xuống ứng dụng</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="html/send.html"><i class="fa-solid fa-cloud-arrow-up"></i>
+                                Đăng bán sản phẩm</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="">
+                <h1 class="big-heading">Xin chào!</h1>
+                <p>Dưới đây là trang chủ của Chợ Tết Online, nếu bạn muốn mua sắm ngay, hãy bấm nút phía dưới:</p>
+                <a href="html/store.html"><button type="button"
+                        class="btn btn-outline-light btn-lg goto-buttons mb-4"><i class="fa-solid fa-circle-right"></i>
+                        Mua sắm ngay!</button></a>
+                <p class="mt-3">--------------- hoặc ---------------</p>
+                <a href="#features"><button type="button" class="btn btn-outline-light btn-lg goto-buttons mt-4"><i
+                            class="fa-solid fa-circle-right"></i>
+                        Khám phá trang chủ ngay!</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="features">
+        <div class="row">
+            <div class="col-lg-4 feature-box">
+                <i class="fas fa-check-circle fa-4x myColor"></i>
+                <h3 class="feature-title">Dễ dàng mua sắm</h3>
+                <p id="features-p">Cửa hàng chúng tôi thiết kế hiện đại với phong cách dễ dàng mua sắm và sử dụng</p>
+            </div>
+            <div class="col-lg-4 feature-box">
+                <i class="fa-solid fa-truck-fast fa-4x myColor2"></i><i class="fa-solid fa-wrench fa-4x myColor2"></i>
+                <h3 class="feature-title">Dịch vụ uy tín, chất lượng cao</h3>
+                <p id="features-p">Dịch vụ chuyển phát hàng nhanh chóng - Hỗ trợ khách hàng 24/7</p>
+            </div>
+            <div class="col-lg-4 feature-box">
+                <i class="fa-solid fa-ear-listen fa-4x myColor"></i>
+                <h3 class="feature-title">Khách hàng là trên hết</h3>
+                <p id="features-p">Chúng tôi luôn lắng nghe phản hồi của khách hàng để cải thiện chất lượng dịch vụ.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid feeling" id="testimonial">
+        <h2>Ý kiến của khách hàng:</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active container-fluid">
+                    <h2 class="testimonial-text">Cửa hàng này thật tuyệt! Nó giúp tôi mua sắm những đồ cần thiết cho dịp Tết sắp tới này.</h2>
+                    <em>123, Vietnam</em><br>
+                    <em><i class="fa-solid fa-circle-check"></i> Có, tôi rất thích cửa hàng này!</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text">Cửa hàng này khiến tôi quá bất ngờ! Mọi thứ ở đây đều rẻ, có cả thông tin du lịch, những câu đối, lời chúc Tết cực kì hay, ý nghĩa!</h2>
+                    <em>ABC, Cuba</em><br>
+                    <em><i class="fa-solid fa-circle-check"></i>Có, tôi rất thích cửa hàng này!</em>
+                </div>
+                <div class="carousel-item container-fluid">
+                    <h2 class="testimonial-text"></h2>
+                    <em>XYZ, Lào</em><br>
+                    <em><i class="fa-solid fa-circle-xmark"></i> No, I do not recommend this store.</em><br>
+                    <em><i class="fa-solid fa-screwdriver-wrench"></i> We are fixing the above bug!</em>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="container-fluid" id="pricing">
+        <h2>Các sản phẩm bán chạy</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 pricing-col">
+                <div class="card">
+                    <div class="card-header the-shadow">
+                        <h3>Cây thông Noel - Lớn</h3>
+                    </div>
+                    <div class="card-body">
+                        <img class="img0" src="img/tree.png" alt="Cây thông">
+                        <h2 class="pricing-text mt-2">250.000 VNĐ</h2>
+                        <p id="features-p">Cây thông Noel - Lớn</p>
+                        <p id="features-p">Vật liệu: Nhựa</p>
+                        <p id="features-p">Dùng để trang trí mùa Noel</p>
+                        <a href="html/store-item/tree.html" target="_blank"><button type="button"
+                                class="btn btn-lg btn-block btn-outline-dark btn-block the-shadow explore-button">Xem
+                                Ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pricing-col">
+                <div class="card">
+                    <div class="card-header the-shadow">
+                        <h3>Samsung Galaxy S24 Ultra</h3>
+                    </div>
+                    <div class="card-body">
+                        <img class="img1" src="img/S24Ultra1.jpg" alt="S24Ultra-Titan">
+                        <img class="img1" src="img/S24Ultra2.jpg" alt="S24Ultra-Black">
+                        <img class="img1" src="img/S24Ultra3.jpg" alt="S24Ultra-Purple">
+                        <img class="img1" src="img/S24Ultra4.jpg" alt="S24Ultra-Yellow">
+                        <h2 class="pricing-text mt-2">25.960.000 VNĐ</h2>
+                        <p id="features-p">Samsung Galaxy S24 Ultra</p>
+                        <p id="features-p">Snapdragon 8 gen 3, RAM 8GB, 256GB</p>
+                        <p id="features-p">Phòng chờ hạng thương gia, Youtube Premium,...</p>
+                        <a href="html/store-item/samsung.html" target="_blank"><button type="button"
+                                class="btn btn-lg btn-block btn-dark btn-block the-shadow explore-button">Xem
+                                Ngay</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 pricing-col">
+                <div class="card">
+                    <div class="card-header the-shadow">
+                        <h3>Vòng cây Noel Trang trí</h3>
+                    </div>
+                    <div class="card-body">
+                        <img class="img0" src="img/tree2.png" alt="Cây thông">
+                        <h2 class="pricing-text mt-2">85.000 VNĐ</h2>
+                        <p id="features-p">Vòng cây Noel Trang trí</p>
+                        <p id="features-p">Vật liệu: Nhựa</p>
+                        <p id="features-p">Dùng để trang trí mùa Noel</p>
+                        <a href="html/store-item/tree2.html" target="_blank"><button type="button"
+                                class="btn btn-lg btn-block btn-outline-dark btn-block the-shadow explore-button">Xem
+                                Ngay</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p id="explore-p">Còn nhiều sản phẩm khác nữa</p>
+        <a href="html/store.html"><button type="button" class="btn btn-outline-dark btn-lg goto3-buttons"><i
+                    class="fa-solid fa-circle-right"></i>
+                Khám phá cửa hàng ngay!</button></a>
+    </div>
+    <div class="container-fluid end">
+        <h3 id="last-section">Chợ Tết online uy tín, chất lượng cao!</h3>
+        <p id="note-p">Chúng tôi cam kết luôn luôn bán hàng uy tín, đạt chất lượng cao, đảm bảo an toàn cho người tiêu dùng!</p>
+        <a href="html/store.html"><button type="button" class="btn btn-outline-light btn-lg goto2-buttons"><i
+                    class="fa-solid fa-circle-right"></i>
+                Khám phá cửa hàng ngay!</button></a>
+        <p class="mt-3">--------------- hoặc ---------------</p>
+        <a href="html/download.html"><button type="button" class="btn btn-outline-light btn-lg goto2-buttons mt-2"><i
+                    class="fa-solid fa-circle-right"></i>
+                Tải ứng dụng mobile ngay!</button></a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="container-fluid" id="footer">
+        <a class="a btn " role="button" href="https://www.youtube.com/channel/UCMaj6Ou0jF_bcgDg86yAD7A"
+            target="_blank"><i class="fa-brands fa-youtube icon"></i></a>
+        <a class="a btn " role="button" href="https://x.com/DuyNguyenHuu08" target="_blank"><i
+                class="fa-brands fa-x-twitter icon1"></i></a>
+        <a class="a btn " role="button" href="https://github.com/DuyNguyenHuu-08" target="_blank"><i
+                class="fa-brands fa-github icon1"></i></a>
+        <br>
+        <br>
+        <p id="features-p">Copyright &copy; by Nguyễn Hữu Duy 2024 - All right reserved</p>
+    </div>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script class="slide">
+        w3.slideshow(".img1", 2000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
