@@ -80,6 +80,11 @@ h2 {
     transition: 0.4s;
 }
 
+.search {
+    position: relative;
+    padding: 50px;
+}
+
 @media only screen and (min-width: 1024px) {
     h2 {
         width: 480px;
@@ -88,6 +93,12 @@ h2 {
         margin-top: 50px;
         left: 100px;
         transition: 0.4s;
+    }
+
+    .search {
+        position: relative;
+        left: 120px;
+        width: 40%;
     }
 
     .p_update {

@@ -1,12 +1,15 @@
 body {
     text-align: center;
     color: black;
+    background-color: #fcfaf6;
 }
 
 .header {
     background: url(../materials/hoadao.jpg) center no-repeat fixed;
     background-size: cover;
     color: white;
+    padding: 70px;
+    border-radius: 50px;
 }
 
 .container-fluid {
@@ -150,14 +153,12 @@ a {
 
 #pricing {
     position: relative;
-    background-color: white;
     padding: 20px;
 }
 
 @media only screen and (min-width: 1500px) {
     #pricing {
         position: relative;
-        background-color: white;
         padding: 100px;
     }
 }
