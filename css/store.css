@@ -1,13 +1,13 @@
 body {
     text-align: center;
     color: black;
+    background-color: #fcfaf6;
 }
 
 .header {
     border-radius: 50px;
     background: url(../materials/hoadao.jpg) center no-repeat fixed;
     background-size: cover;
-    background-color: #8B4513;
     color: white;
 }
 
@@ -57,7 +57,7 @@ body {
     padding: 10px;
     width: 300px;
     border: none;
-    background-color: white;
+    background-color: #fcfaf6;
     color: black;
     transition: 0.2s;
     font-size: large;
@@ -72,12 +72,24 @@ body {
     color: black;
 }
 
+.download-buttons{
+    border: none;
+    background-color: #f6efe3;
+}
+
 h2 {
     position: relative;
     margin-bottom: 20px;
     left: 0px;
     margin-top: 50px;
     transition: 0.4s;
+}
+
+h4 {
+    position: relative;
+    margin-bottom: 20px;
+    left: 0px;
+    margin-top: 50px;
 }
 
 .search {
@@ -95,10 +107,19 @@ h2 {
         transition: 0.4s;
     }
 
+    h4 {
+        width: 300px;
+        position: relative;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        left: 100px;
+    }
+
     .search {
         position: relative;
+        margin-top: 0px;
         left: 120px;
-        width: 40%;
+        width: 45%;
     }
 
     .p_update {
@@ -120,10 +141,11 @@ h2:hover {
 .content1 {
     height: 400px;
     width: 320px;
-    padding: 15px;
+    padding: 20px;
     position: relative;
-    background-color: #F7F7F7;
+    background-color: #f6efe3;
     text-align: center;
+    border-radius: 20px;
 }
 
 .content1 p {
@@ -133,81 +155,6 @@ h2:hover {
 
 .content1 img {
     height: 150px;
-}
-
-.content2 {
-    height: 400px;
-    width: 320px;
-    padding: 15px;
-    position: relative;
-    background-color: #F7F7F7;
-    text-align: center;
-}
-
-.content2 p {
-    margin-top: 10px;
-    margin-bottom: 22px;
-}
-
-.content2 img {
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content3 {
-    height: 400px;
-    width: 320px;
-    padding: 15px;
-    position: relative;
-    background-color: #F7F7F7;
-    text-align: center;
-}
-
-.content3 p {
-    margin-top: 10px;
-    margin-bottom: 22px;
-}
-
-.content3 img {
-    height: 165px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.content4 {
-    height: 400px;
-    width: 320px;
-    padding: 15px;
-    position: relative;
-    background-color: #F7F7F7;
-    text-align: center;
-}
-
-.content4 p {
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.content4 img {
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-button {
-    border-radius: 8px;
-    font-size: large;
-    padding: 18px;
-    border: none;
-    transition: 0.3s;
-    background-color: #3F8E00;
-}
-
-button:hover {
-    color: white;
-    cursor: pointer;
-    background-color: #62BA1B;
 }
 
 .p_update {
