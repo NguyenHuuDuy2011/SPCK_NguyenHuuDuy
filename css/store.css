@@ -153,8 +153,14 @@ h2:hover {
     margin-top: 20px;
 }
 
-.content1 img {
+img {
+    border-radius: 10px;
     height: 150px;
+    transition: 0.15s;
+}
+
+img:hover{
+    scale: 150%;
 }
 
 .p_update {
@@ -204,4 +210,8 @@ h2:hover {
 .icon1:hover {
     color: gray;
     scale: 150%;
+}
+
+h5{
+    margin-top: 10px;
 }
