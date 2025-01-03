@@ -76,14 +76,16 @@ a {
 .myColor {
     color: black;
     transition: 0.1s;
+    margin-bottom: 20px;
 }
 
 .myColor:hover {
-    color: #49c87c;
+    color: #9b7834;
     scale: 150%;
 }
 
 .myColor2 {
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     color: black;
@@ -91,7 +93,7 @@ a {
 }
 
 .myColor2:hover {
-    color: #49c87c;
+    color: #9b7834;
     scale: 150%;
 }
 
@@ -192,7 +194,16 @@ a {
     background-color: #9A7C4F;
 }
 
-@media (min-width: 1366px) {
+.feature-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #f6efe3;
+}
+
+@media only screen and (min-width: 1366px) {
     .card-body {
         position: relative;
         background-color: #f6efe3;
@@ -203,5 +214,19 @@ a {
             margin-left: auto;
             margin-right: auto;
         }
+    }
+}
+
+@media only screen and (min-width: 1270px){
+    .feature-box {
+        width: 30%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .nhan-xet{
+        font-size: 30px;
     }
 }
