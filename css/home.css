@@ -65,8 +65,10 @@ body {
 }
 
 .goto3-buttons {
-    width: 50%;
-    padding: 15px;
+    border-radius: 15px;
+    /* border: none; */
+    padding: 35px;
+    background-color: #f6efe3;
 }
 
 a {
@@ -229,4 +231,12 @@ a {
     .nhan-xet{
         font-size: 30px;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    .goto3-buttons{
+        padding: 20px;
+        width: 50%;
+    }
+    
 }

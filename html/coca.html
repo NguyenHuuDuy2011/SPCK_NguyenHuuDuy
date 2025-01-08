@@ -15,7 +15,7 @@
         function updatePrice() {
             const pricePerUnit = 180.000; // Giá tiền mỗi sản phẩm
             const quantityInput = document.getElementById('quantity');
-            const priceDisplay = document.getElementById('price');
+            const priceDisplay = document.getElementById('price2');
 
             quantityInput.addEventListener('input', function () {
                 const quantity = parseInt(quantityInput.value);
@@ -93,7 +93,7 @@
                 <div class="content" id="form-add">
                     <h5 class="mt-3 mb-3" id="title">Thùng nước ngọt CocaCola Tết 24 lon 320ml</h5>
                     <p id="content">24 lon, mỗi lon 320ml</p>
-                    <p class="mt-1" id="price">Giá bán: <span id="price">180</span>.000 VNĐ</p>
+                    <p class="mt-1" id="price">Giá bán: <span id="price2">180</span>.000 VNĐ</p>
                     <label for="name">Số lượng:</label><br>
                     <form class="was-validated" action="pay.html">
                         <div class="mt-3 mb-3">
@@ -123,10 +123,10 @@
                                 ngay!</button>
                         </div>
                     </form>
-                    <div class="mb-3">
-                        <a href="cart.html" onclick="add()"><button class="btn btn-outline-dark btn-lg mt-2 mb-4 goto-buttons">Thêm vào giỏ
-                                hàng</button></a>
-                    </div>
+                    <a href="" onclick="add()">
+                        <button class="btn btn-outline-dark btn-lg mt-2 mb-4 goto-buttons" type="submit">Thêm vào giỏ
+                            hàng</button>
+                    </a>
                 </div>
             </div>
         </div>
