@@ -173,7 +173,8 @@ a {
 }
 
 .explore-button {
-    width: 100%;
+    width: 90%;
+    border: none;
 }
 
 .pricing-col {
