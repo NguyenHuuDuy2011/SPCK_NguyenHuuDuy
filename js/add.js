@@ -21,13 +21,14 @@ function add() {
 
     // Kiểm tra sản phẩm đã tồn tại trong localStorage
     const existingItem = JSON.parse(localStorage.getItem(item.Title));
-    if (existingItem) {
+    if (title === existingItem) {
         alert("Sản phẩm đã được thêm vào giỏ hàng!");
         return;
     }
-
-    // Lưu vào localStorage
-    localStorage.setItem(item.Title, JSON.stringify(item));
-    alert("Thêm vào giỏ hàng thành công!");
-    window.location.href = "../html/cart.html";
+    else {
+        // Lưu vào localStorage
+        localStorage.setItem(item.Title, JSON.stringify(item));
+        alert("Thêm vào giỏ hàng thành công!");
+        window.location.href = "../html/cart.html";   
+    }
 }
