@@ -107,44 +107,19 @@ body {
     scale: 150%;
 }
 
-#features {
-    .product {
-        padding: 20px;
-        flex-wrap: wrap;
-        position: relative;
-        display: flex;
-        gap: 100px;
-        justify-content: center;
-    }
-
-    .feature-box {
-        border-radius: 10px;
-        height: 300px;
-        width: 320px;
-        padding: 15px;
-        position: relative;
-        background-color: #F7F7F7;
-        text-align: center;
-    }
-
-    .img1 {
-        width: 130px;
-    }
-
-    .img2 {
-        width: 235px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+.content_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 .content1 {
-    height: 400px;
+    height: 520px;
     width: 320px;
     padding: 20px;
     position: relative;
     background-color: #f6efe3;
     text-align: center;
+    align-content: center;
     border-radius: 20px;
 }
 
@@ -161,4 +136,11 @@ img {
 
 img:hover {
     scale: 150%;
+}
+
+.remove{
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px;
 }
