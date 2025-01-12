@@ -144,6 +144,16 @@ h2:hover {
     background-color: #f6efe3;
     text-align: center;
     border-radius: 20px;
+    transition: 0.2s;
+}
+
+.content1:hover {
+    background-color: #f0e6d8;
+    scale: 105%;
+    cursor: pointer;
+    /* .download-buttons{
+        background-color: #f0e6d8;
+    } */
 }
 
 .content1 p {
@@ -158,7 +168,7 @@ img {
 }
 
 img:hover{
-    scale: 150%;
+    scale: 130%;
 }
 
 .p_update {

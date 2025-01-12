@@ -95,10 +95,8 @@
             </div>
             <h1>Tình trạng giỏ hàng</h1>
             <div class="content_box">
-                <div class="content">
-                </div>
             </div>
-
+            <div id="totalPriceElement" class="total-price"></div>
         </div>
     </div>
     <div class="container-fluid end">
@@ -121,7 +119,7 @@
             target="_blank"><i class="fa-brands fa-youtube icon"></i></a>
         <a class="a btn " role="button" href="https://x.com/DuyNguyenHuu08" target="_blank"><i
                 class="fa-brands fa-x-twitter icon1"></i></a>
-        <a class="a btn " role="button" href="https://github.com/DuyNguyenHuu-08" target="_blank"><i
+        <a class="a btn " role="button" href="https://github.com/NguyenHuuDuy2011" target="_blank"><i
                 class="fa-brands fa-github icon1"></i></a>
         <br>
         <br>
@@ -134,7 +132,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const cartContainer = document.querySelector('.content'); // Khu vực hiển thị sản phẩm
-            const totalPriceElement = document.createElement('div'); // Khu vực hiển thị tổng giá
+            const totalPriceElement = document.getElementById('totalPriceElement'); // Khu vực hiển thị tổng giá trị giỏ hàng
             totalPriceElement.className = "total-price mt-4";
 
             // Lấy danh sách sản phẩm từ localStorage
@@ -159,26 +157,30 @@
                 totalCartPrice += itemTotalPrice;
 
                 // Nội dung sản phẩm
-                productDiv.innerHTML = `
-                    <div class="content1">
-                        <img src="${product.img_path}" alt="${product.title}" class="img-fluid mb-2" style="max-width: 150px;">
-                        <h5 class="product-title">${product.title}</h5>
-                        <p class="product-info">${product.des}</p>
-                        <p class="product-cost">Giá/1 sản phẩm: ${product.price.toLocaleString('vi-VN')}.000 VNĐ</p>
-                        <p>Số lượng: ${product.quantity || 1}</p>
-                        <p>Tổng giá trị sản phẩm: ${itemTotalPrice.toLocaleString('vi-VN')}.000 VNĐ</p>
-                        <button class="btn btn-danger btn-sm remove-btn mt-3 remove" data-index="${index}"><i class="fa-solid fa-trash fa-xl" style="color: #ffffff;"></i> Xóa sản phẩm</button>
-                        <a href="pay.html" target="_blank"><button class="btn btn-light btn-lg download-buttons mt-3"><i
-                            class="fa-solid fa-circle-right"></i> Mua ngay!</button></a>
-                    </div>
-                `;
+                const contentBox = document.querySelector('.content_box'); // Lấy thẻ chứa sản phẩm
+                const newProductDiv = document.createElement('div'); // Tạo div mới cho sản phẩm
+                newProductDiv.className = 'content1'; // Thêm class cho sản phẩm
+                newProductDiv.innerHTML = `
+                    <img src="${product.img_path}" alt="${product.title}" class="img-fluid mb-2" style="max-width: 150px;">
+                    <h5 class="product-title">${product.title}</h5>
+                    <p class="product-info">${product.des}</p>
+                    <p class="product-cost">Giá/1 sản phẩm: ${product.price.toLocaleString('vi-VN')}.000 VNĐ</p>
+                    <p>Số lượng: ${product.quantity || 1}</p>
+                    <p>Tổng giá trị sản phẩm: ${itemTotalPrice.toLocaleString('vi-VN')}.000 VNĐ</p>
+                    <button class="btn btn-danger btn-sm remove-btn mt-3 remove" data-index="${index}"><i class="fa-solid fa-trash fa-xl" style="color: #ffffff;"></i> Xóa sản phẩm</button>
+                    <a href="pay.html" target="_blank"><button class="btn btn-light btn-lg download-buttons mt-3"><i
+                        class="fa-solid fa-circle-right"></i> Mua ngay!</button></a>
+                `;              
+                contentBox.appendChild(newProductDiv); // Thêm sản phẩm mới vào .content_box
 
-                cartContainer.appendChild(productDiv);
+
+                // cartContainer.appendChild(productDiv);
             });
 
             // Thêm tổng giá trị giỏ hàng
             totalPriceElement.innerHTML = `
-                <h4>Tổng giá trị giỏ hàng: ${totalCartPrice.toLocaleString('vi-VN')} VND</h4>
+                <h4>Tổng giá trị giỏ hàng: ${totalCartPrice.toLocaleString('vi-VN')}.000 VNĐ</h4>
+                <a href="store.html"><button type="button" class="btn btn-light btn-lg shop-button mt-4"><i class="fa-solid fa-circle-right"></i> Tiếp tục mua sắm</button></a>
             `;
             cartContainer.appendChild(totalPriceElement);
 

@@ -153,6 +153,7 @@ a {
 
 .card-header{
     background-color: #f6efe3;
+    transition: 0.2s;
 }
 
 #explore-p {
@@ -204,6 +205,12 @@ a {
     width: 100%;
     border-radius: 30px;
     background-color: #f6efe3;
+    transition: 0.2s;
+}
+
+.feature-box:hover{
+    scale: 105%;
+    background-color: #f0e6d8;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -211,6 +218,7 @@ a {
         position: relative;
         background-color: #f6efe3;
         text-align: center;
+        transition: 0.2s;
 
         img {
             height: 170px;
@@ -240,4 +248,18 @@ a {
         width: 50%;
     }
     
+}
+
+.card{
+    transition: 0.2s;
+}
+
+.card:hover{
+    scale: 105%;
+    .card-body{
+        background-color: #f0e6d8;
+    }
+    .card-header{
+        background-color: #f0e6d8;
+    }
 }

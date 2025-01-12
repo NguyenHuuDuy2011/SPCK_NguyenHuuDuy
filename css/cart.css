@@ -107,20 +107,28 @@ body {
     scale: 150%;
 }
 
-.content_box{
+.content_box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* Sử dụng Flexbox để sắp xếp theo hàng ngang */
+    flex-wrap: wrap;
+    /* Tự động xuống dòng nếu không đủ chỗ */
+    gap: 15px;
+    /* Khoảng cách giữa các sản phẩm */
+    justify-content: space-around;
+    /* Căn đều các sản phẩm */
 }
+
 .content1 {
-    height: 520px;
-    width: 320px;
+    height: 550px;
+    width: 330px;
     padding: 20px;
     position: relative;
     background-color: #f6efe3;
     text-align: center;
     align-content: center;
     border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .content1 p {
@@ -143,4 +151,17 @@ img:hover {
     border-radius: 8px;
     font-size: 16px;
     padding: 10px;
+}
+
+.total-price {
+    text-align: center;
+    /* Căn giữa nội dung */
+    margin: 20px auto;
+    /* Tạo khoảng cách trên dưới và căn giữa theo chiều ngang */
+    font-size: 1.5rem;
+    /* Tăng kích thước chữ nếu cần */
+    font-weight: bold;
+    /* Màu chữ */
+    width: 100%;
+    /* Đảm bảo nó chiếm toàn bộ chiều rộng */
 }
