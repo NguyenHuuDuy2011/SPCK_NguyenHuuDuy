@@ -94,6 +94,7 @@
                 </span>
             </div>
             <h1>Tình trạng giỏ hàng</h1>
+            <div class="cart-container"></div>
             <div class="content_box">
             </div>
             <div id="totalPriceElement" class="total-price"></div>
@@ -131,7 +132,8 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const cartContainer = document.querySelector('.content'); // Khu vực hiển thị sản phẩm
+            const cartContainer = document.querySelector('.content_box'); // Khu vực hiển thị sản phẩm
+            const cartContainer2 = document.querySelector('.cart-container'); // Khu vực hiển thị sản phẩm
             const totalPriceElement = document.getElementById('totalPriceElement'); // Khu vực hiển thị tổng giá trị giỏ hàng
             totalPriceElement.className = "total-price mt-4";
 
@@ -140,8 +142,8 @@
 
             // Kiểm tra nếu giỏ hàng rỗng
             if (productList.length === 0) {
-                cartContainer.innerHTML = '<h5 class="mt-3">Chưa có sản phẩm nào trong giỏ hàng!</h5>';
-                cartContainer.innerHTML += '<a href="store.html"><button type="button" class="btn btn-light btn-lg shop-button mt-5 mb-5"><i class="fa-solid fa-circle-right"></i> Mua hàng ngay tại đây!</button></a>';
+                cartContainer2.innerHTML = '<h5 class="mt-3">Chưa có sản phẩm nào trong giỏ hàng!</h5>';
+                cartContainer2.innerHTML += '<a href="store.html"><button type="button" class="btn btn-light btn-lg shop-button mt-5 mb-5"><i class="fa-solid fa-circle-right"></i> Mua hàng ngay tại đây!</button></a>';
                 return;
             }
 
@@ -170,7 +172,7 @@
                     <button class="btn btn-danger btn-sm remove-btn mt-3 remove" data-index="${index}"><i class="fa-solid fa-trash fa-xl" style="color: #ffffff;"></i> Xóa sản phẩm</button>
                     <a href="pay.html" target="_blank"><button class="btn btn-light btn-lg download-buttons mt-3"><i
                         class="fa-solid fa-circle-right"></i> Mua ngay!</button></a>
-                `;              
+                `;
                 contentBox.appendChild(newProductDiv); // Thêm sản phẩm mới vào .content_box
 
 
