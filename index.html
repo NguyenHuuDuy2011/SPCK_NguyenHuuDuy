@@ -129,7 +129,7 @@
                     <em><i class="fa-solid fa-circle-check"></i>Có, tôi rất thích cửa hàng này!</em>
                 </div>
                 <div class="carousel-item container-fluid">
-                    <h2 class="testimonial-text nhan-xet"></h2>
+                    <h2 class="testimonial-text nhan-xet">Cửa hàng này vẫn còn các lỗi </h2>
                     <em>XYZ, Lào</em><br>
                     <em><i class="fa-solid fa-circle-xmark"></i> No, I do not recommend this store.</em><br>
                     <em><i class="fa-solid fa-screwdriver-wrench"></i> We are fixing the above bug!</em>
@@ -160,9 +160,11 @@
                         <h2 class="pricing-text mt-2">180.000 VNĐ</h2>
                         <p id="features-p">Nước ngọt có ga CocaCola</p>
                         <p id="features-p">24 lon, mỗi lon 320ml</p>
-                        <a href="html/coca.html" target="_blank"><button type="button"
-                                class="btn btn-lg btn-block btn-outline-dark btn-block the-shadow explore-button">Xem
-                                Ngay</button></a>
+                        <a href="html/buy.html" target="_blank"
+                            onclick="addToCart('../materials/cocacola.jpg', 'Thùng nước ngọt CocaCola Tết 24 lon', '24 lon, mỗi lon 320ml', '180')">
+                            <button class="btn btn-outline-dark btn-lg download-buttons mt-3"><i class="fa-solid fa-circle-right"></i>
+                                Xem chi tiết</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -175,27 +177,28 @@
                         <img class="img1" src="materials/banhchung.jpg" alt="S24Ultra-Titan">
                         <h2 class="pricing-text mt-2">100.000 VNĐ</h2>
                         <p id="features-p">Khối lượng: 500g/1 bánh</p>
-                        <p id="features-p">Phòng chờ hạng thương gia, Youtube Premium,...</p>
-                        <a href="html/store-item/samsung.html" target="_blank"><button type="button"
-                                class="btn btn-lg btn-block btn-dark btn-block the-shadow explore-button">Xem
-                                Ngay</button></a>
+                        <a href="html/buy.html" target="_blank"
+                            onclick="addToCart('../materials/banhchung.jpg', 'Bánh chưng Tết 500g', 'Khối lượng: 500 gam/1 bánh', '100')"><button
+                                class="btn btn-dark btn-lg download-buttons mt-3"><i class="fa-solid fa-circle-right"></i> Xem
+                                chi tiết</button></a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 pricing-col">
                 <div class="card">
                     <div class="card-header the-shadow">
-                        <h3>Vòng cây Noel Trang trí</h3>
+                        <h3>Giỏ quà Tết - Loại 1</h3>
                     </div>
                     <div class="card-body">
-                        <img class="img0" src="img/tree2.png" alt="Cây thông">
-                        <h2 class="pricing-text mt-2">85.000 VNĐ</h2>
-                        <p id="features-p">Vòng cây Noel Trang trí</p>
-                        <p id="features-p">Vật liệu: Nhựa</p>
-                        <p id="features-p">Dùng để trang trí mùa Noel</p>
-                        <a href="html/store-item/tree2.html" target="_blank"><button type="button"
-                                class="btn btn-lg btn-block btn-outline-dark btn-block the-shadow explore-button">Xem
-                                Ngay</button></a>
+                        <img class="img0" src="materials/gio_qua1.jpg" alt="Cây thông">
+                        <h2 class="pricing-text mt-2">500.000 VNĐ</h2>
+                        <p id="features-p">Giỏ quà Tết - Loại 1</p>
+                        <p id="features-p">Bánh kẹo + Trà bí đao + 1 bình hoa</p>
+                        <a href="html/buy.html" target="_blank"
+                            onclick="addToCart('../materials/gio_qua1.jpg', 'Giỏ quà Tết - Loại 1', 'Bánh kẹo + Trà bí đao + 1 bình hoa','500')"><button
+                                class="btn btn-outline-dark btn-lg download-buttons mt-3"><i class="fa-solid fa-circle-right"></i> Xem
+                                chi
+                                tiết</button></a>
                     </div>
                 </div>
             </div>
@@ -239,6 +242,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        function addToCart(img_path, title, des, price) {
+                const item = {
+                    'img_path': img_path,
+                    'title': title,
+                    'des': des,
+                    'price': price,
+                }
+                localStorage.setItem('product', JSON.stringify(item));
+            }
+    </script>
 </body>
 
 </html>
