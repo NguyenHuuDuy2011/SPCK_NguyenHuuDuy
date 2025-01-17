@@ -43,3 +43,4 @@ function add() {
     alert("Thêm vào giỏ hàng thành công!");
     window.location.href = "../html/cart.html"; // Chuyển hướng đến trang giỏ hàng
 }
+
